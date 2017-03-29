@@ -46,6 +46,10 @@ def thumber():
         images+=[collect]
     return jsonify(error= None, message ="Success",thumbnails=images)
 
+@app.route('/thumbnails/view')
+def viewThumbnails():
+    return render_template("thumbnail.html")
+    
 ###
 # The functions below should be applicable to all Flask apps.
 ###
